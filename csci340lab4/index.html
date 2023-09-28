@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <title>Good Martian Morning</title>
     
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <section class="container">
+        <div class="row welcome">
+            <div class="col-sm-8">
+                <div class="row">
+                    <h1>Good Morning, Martian!</h1>
+                </div>
+                <div class="row">
+                    <h3>Welcome to Mars! Here you can view yourself as a robot and see what your neighbors can see.</h3>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <img id="robot" src="https://robohash.org/default?" alt="random robot">
+                </div>
+                <div class="row">
+                    <input id="robobutton" type="button" value="New Selfie"></input>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>NeighborCam:</h1>
+                <h4>Pick a neighbor to see what they're up to!</h4>
+                <div class="row">
+                    <input id="curiosity" type="button" value="Curiosity"></input>
+                    <input id="opportunity" type="button" value="Opportunity"></input>
+                    <input id="spirit" type="button" value="Spirit"></input>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Neighbor Details</h3>
+                <div class="row">
+                    
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <h3>Most recent photo</h3>
 
+            </div>
+        </div>
 
+    </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

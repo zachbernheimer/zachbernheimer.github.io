@@ -1,0 +1,27 @@
+.welcome{
+    display: flex;
+}
+.welcome img{
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#robobutton{
+    margin: auto;
+    display: flex;
+}
+
+body{
+    background-color: rgb(167, 53, 40);
+    color: black;
+}
+input{
+    color: black;
+}
+
+.container{
+    background-color: white;
+    margin-top: 2%;
+    padding: 2%;
+}
