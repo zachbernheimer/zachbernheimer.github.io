@@ -13,7 +13,7 @@
 }
 
 body{
-    background-color: rgb(216, 88, 42);
+    background-color: rgb(227, 108, 81);
     color: black;
 }
 input{
@@ -23,7 +23,7 @@ input{
 .container{
     background-color: white;
     margin-top: 2%;
-    padding: 2%;
+    padding: 3%;
 }
 
 #roverinfo{

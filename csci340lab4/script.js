@@ -8,7 +8,6 @@ $(document).ready(function() {
     };
 
     var get_rover_data = function(rover) {
-        var earth_date = "2015-6-3"
         var api_key = "DEMO_KEY";
         $.ajax({
             dataType: "json",
@@ -24,6 +23,29 @@ $(document).ready(function() {
                 $('#r_total_posted').html(manifest["total_photos"]);
                 $('#r_latest_date').html(manifest["max_date"]);
 
+                //get images to go on the left side of the page
+                get_rover_images(manifest);
+            },
+            error: function(xhr,status,error) {
+                console.log(error);
+            }
+        });
+    };
+
+    var get_rover_images = function(manifest) {
+        var api_key = "DEMO_KEY";
+        var rover = manifest["name"]
+        var earth_date = manifest["max_date"]
+        $.ajax({
+            dataType: "json",
+            //`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-6-3&api_key=DEMO_KEY`
+            url: `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?earth_date=${earth_date}&api_key=${api_key}`,
+            success: function(results) {
+                console.log(results);
+                photos = results["photos"]
+                image = photos[photos.length-1]
+                src = image["img_src"]
+                $("#rover_img").attr("src", src);
             },
             error: function(xhr,status,error) {
                 console.log(error);
