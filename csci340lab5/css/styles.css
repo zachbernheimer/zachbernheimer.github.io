@@ -10840,32 +10840,31 @@ textarea.form-control-lg {
 
 header.masthead {
   position: relative;
-  background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background-color: seagreen;
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 header.masthead:before {
   content: "";
   position: absolute;
-  background-color: #1c375e;
+  background-image: linear-gradient(white, seagreen);
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.35;
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2rem;
 }
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   header.masthead h1, header.masthead .h1 {
-    font-size: 3rem;
+    font-size: 6rem;
   }
 }
 
@@ -10883,7 +10882,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .testimonials {
-  padding-top: 7rem;
+  padding-top: 5rem;
   padding-bottom: 7rem;
 }
 .testimonials .testimonial-item {
@@ -10896,24 +10895,22 @@ header.masthead h1, header.masthead .h1 {
 
 .call-to-action {
   position: relative;
-  background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
-  background-size: cover;
+  background-color: seagreen;
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
 .call-to-action:before {
   content: "";
   position: absolute;
-  background-color: #1c375e;
+  background-color: seagreen;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 footer.footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
