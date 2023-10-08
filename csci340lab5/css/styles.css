@@ -10898,6 +10898,11 @@ header.masthead h1, header.masthead .h1 {
   padding-bottom:3rem;
 }
 
+.compensation h1 {
+  font-size: 4rem;
+  color: seagreen;
+}
+
 .call-to-action {
   position: relative;
   background-color: seagreen;
